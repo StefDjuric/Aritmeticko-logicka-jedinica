@@ -1,0 +1,121 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Izlaz[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Izlaz[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Izlaz[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Izlaz[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Izlaz[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Izlaz[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Izlaz[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Izlaz[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Selekcija[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Ulaz2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Ulaz1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Selekcija[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Selekcija[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Selekcija[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Ulaz2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Ulaz1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Ulaz2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Ulaz1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Ulaz2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Ulaz1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Ulaz2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Ulaz1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Ulaz2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Ulaz1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Ulaz2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Ulaz1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Ulaz2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Ulaz1[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

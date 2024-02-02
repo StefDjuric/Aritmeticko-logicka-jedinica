@@ -1,0 +1,28 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+ENTITY arit_jedinica IS
+	PORT (Ulaz1, Ulaz2:	IN  STD_LOGIC_VECTOR(7 DOWNTO 0);
+			Izlaz			:	OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+			Selekcija	:	IN  STD_LOGIC_VECTOR(2 DOWNTO 0)
+		);
+END ENTITY;
+
+
+ARCHITECTURE arh_arit OF arit_jedinica IS
+CONSTANT NULA:	STD_LOGIC_VECTOR:="00000000";
+
+BEGIN
+	
+	WITH Selekcija SELECT
+		Izlaz <= Ulaz1				WHEN "000",
+					Ulaz1 - 1		WHEN "001",
+					Ulaz1 + 1   	WHEN "010",
+					Ulaz2				WHEN "011",
+					Ulaz2 - 1		WHEN "100",
+					Ulaz2 + 1		WHEN "101",
+					Ulaz1 + Ulaz2	WHEN "110",
+					NULA				WHEN OTHERS;
+
+END ARCHITECTURE arh_arit;

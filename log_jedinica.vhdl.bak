@@ -1,0 +1,27 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+ENTITY log_jedinica IS
+	PORT (Ulaz1, Ulaz2:	IN  STD_LOGIC_VECTOR(7 DOWNTO 0);
+			Izlaz			:	OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+			Selekcija	:	IN  STD_LOGIC_VECTOR(2 DOWNTO 0)
+		);
+END ENTITY;
+
+
+ARCHITECTURE log_arit OF log_jedinica IS
+
+BEGIN
+	
+	WITH Selekcija SELECT
+		Izlaz <= NOT(Ulaz1)			WHEN "000";
+					NOT(Ulaz2)			WHEN "001";
+					Ulaz1 AND Ulaz2   WHEN "010";
+					Ulaz1 OR Ulaz2		WHEN "011";
+					Ulaz1 NAND Ulaz2	WHEN "100";
+					Ulaz1 NOR Ulaz2	WHEN "101";
+					Ulaz1 XOR Ulaz2	WHEN "110"
+					ULAZ1 XNOR Ulaz2	WHEN OTHERS;
+
+END ARCHITECTURE arh_arit;
